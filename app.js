@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const expressLayouts = require('express-ejs-layouts');
+
 require('dotenv').config();
 
 // Middleware & view engine setup
@@ -17,6 +18,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', require('./routes/index'));
 app.use('/book', require('./routes/book'));
 app.use('/products', require('./routes/products'));
+app.use('/mpesa', require('./routes/mpesa'));
+
 
 // Server
 const PORT = process.env.PORT || 3000;

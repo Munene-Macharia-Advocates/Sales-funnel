@@ -1,8 +1,13 @@
 <!-- Replace your existing hero section with this -->
   <header class="header d-flex justify-content-between align-items-center p-3 p-md-4" style="background: rgba(0,0,0,0.2);">
+
+<div class="logo text-start d-flex align-items-center gap-3">
+  <!-- Logo Image -->
+  <img src="/images/mmlogo.png" alt="The Firm Logo" style="height: 100px;" />
+
     <div class="logo text-start">
       <h1 class="logo-main" style="font-size:32px; font-weight:bold; color:#d4af37; letter-spacing:2px; margin-bottom:5px;">THE FIRM</h1>
-      <p class="logo-sub" style="font-size:12px; color:#d4af37; letter-spacing:1px; margin-top:-5px;">CREDIT & BUSINESS GROUP</p>
+      <p class="logo-sub" style="font-size:12px; color:#d4af37; letter-spacing:1px; margin-top:-5px;">LAW & CONSULTANT GROUP</p>
     </div>
     <nav class="navigation d-flex align-items-center gap-3 flex-wrap">
       <a href="#" class="nav-link text-white text-decoration-none fs-6">Home</a>
@@ -18,35 +23,61 @@
     </nav>
   </header>
 
-
+<!-- Hero Banner -->
+<section class="hero-banner d-flex align-items-center text-white">
   <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-5">
-<img src="/images/Stans-profile.png" alt="Attorney Stan" class="img-fluid rounded" />
 
-    
-    <!-- Left: Hero Text -->
-    <div class="flex-fill text-center text-md-start">
-      <h1 class="display-4 fw-normal mb-4" style="color:#d4af37;">
+    <!-- Left: Profile Image -->
+    <div class="flex-fill d-flex justify-content-center">
+      <img src="/images/Stans-profile2.png" alt="Attorney Stan" class="img-fluid rounded shadow-lg" style="max-width: 350px;" />
+    </div>
+
+    <!-- Right: Hero Text -->
+    <div class="flex-fill text-center text-md-start banner-text">
+      <h1 class="display-4 fw-bold mb-3" style="color:#d4af37;"> <div class="logo text-start d-flex align-items-center gap-3">
+  <!-- Logo Image -->
+  <img src="/images/mmlogo.png" alt="The Firm Logo" style="height: 100px;" />
         THE FIRM<br />
-        <small class="fs-6" style="letter-spacing:1.5px;">PROFESSIONAL LAWYER & CONSULTANT</small>
+</div>
+        <small class="fs-6 text-light" style="letter-spacing:1.5px;">PROFESSIONAL LAWYER & CONSULTANT</small>
+
+
       </h1>
-      <p class="fs-3">
+
+
+
+      <p class="fs-3 lh-sm mb-4">
         I'm <strong>Lawyer Stanley Munene</strong>,<br/>
-        I Help <em>Entrepreneurs</em><br/>
+        I Help <em>You</em><br/>
         Structure, Protect, & Coach<br/>
         Your Business Law Needs<br/>
-        <u style="font-weight:700;">CONSULTANT NOW!</u>
+        <u style="font-weight:700;">CONSULT TODAY!</u>
+
+
+<form id="mpesaForm" action="/mpesa/stkpush" method="POST" style="display: none;">
+  <input type="hidden" name="phone" value="07XXXXXXXX">
+  <input type="hidden" name="amount" value="500">
+</form>
+
+<button class="border-0 bg-transparent p-2" onclick="document.getElementById('mpesaForm').submit()">
+  <img src="/images/mpesa.png" alt="Pay with MPESA" class="img-fluid" style="max-height: 40px;" />
+</button>
+
       </p>
-      <button class="btn btn-outline-warning btn-lg mt-4">Join My Community</button>
+      <a href="#community" class="btn btn-outline-warning btn-lg shadow-sm">Join My Community</a>
     </div>
+
   </div>
 </section>
+
+
 
 <!-- Business Section -->
   <main class="main-content d-flex flex-column flex-md-row align-items-center gap-4 gap-md-5 p-4 p-md-5" style="min-height: calc(100vh - 120px);">
     
     <!-- Image Section -->
     <div class="image-section flex-shrink-0" style="max-width:400px;">
-      <img src="/images/Stans-profile2.png" alt="Professional Businesswoman in Purple" class="img-fluid rounded" />
+      <img src="/images/Stans-profile.png" alt="Professional Businesswoman in Purple" class="img-fluid rounded" />
     </div>
 
     <!-- Content Section -->
